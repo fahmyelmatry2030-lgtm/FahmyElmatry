@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import Services from './sections/Services';
@@ -14,8 +14,23 @@ import WhatsAppWidget from './components/WhatsAppWidget';
 import NexoAI from './components/NexoAI';
 
 function App() {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const currentScroll = window.pageYOffset;
+      setScrollProgress((currentScroll / totalScroll) * 100);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
+      <div className="scroll-progress">
+        <div className="scroll-progress-fill" style={{ width: `${scrollProgress}%` }} />
+      </div>
       <Navbar />
       <main>
         <Hero />
