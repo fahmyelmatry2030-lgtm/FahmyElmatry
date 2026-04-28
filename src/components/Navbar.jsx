@@ -14,10 +14,12 @@ const Navbar = () => {
 
   const links = [
     { name: 'Home', href: '#home' },
+    { name: 'Services', href: '#services' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -33,8 +35,19 @@ const Navbar = () => {
       }}
     >
       <div className="section-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="#home" style={{ fontSize: '1.4rem', fontWeight: 800, color: '#fff', textDecoration: 'none' }}>
-          Fahmy<span style={{ color: '#6366f1' }}>.</span>
+        <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}>
+          <div style={{
+            width: '40px', height: '40px', background: '#6366f1', borderRadius: '12px',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff'
+          }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <span style={{ fontSize: '1.4rem', fontWeight: 800, color: '#fff' }}>
+            Fahmy<span style={{ color: '#6366f1' }}>.</span>
+          </span>
         </a>
 
         {/* Desktop Links */}
