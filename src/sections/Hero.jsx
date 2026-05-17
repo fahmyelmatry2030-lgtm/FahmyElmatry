@@ -85,7 +85,7 @@ const Hero = () => {
               <a href="#contact" className="btn-outline">
                 <span>Get In Touch</span>
               </a>
-              <a href="/assets/cv_screenshot.png" target="_blank" className="btn-outline">
+              <a href="/Fahmy_Elmatry_ATS_CV.pdf" target="_blank" className="btn-outline">
                 <Download size={18} />
                 <span>Resume</span>
               </a>
