@@ -50,9 +50,9 @@ const NexoAI = () => {
             className="nexo-card"
             style={{
               position: 'absolute', bottom: '80px', left: 0,
-              width: '350px', background: '#0f172a', borderRadius: '24px',
-              boxShadow: '0 25px 60px rgba(0,0,0,0.5)', overflow: 'hidden',
-              border: '1px solid rgba(99,102,241,0.2)',
+              width: 'calc(100vw - 40px)', maxWidth: '350px', background: '#0f172a', borderRadius: '24px',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.5)', overflow: 'hidden',
+              border: '1px solid rgba(255,255,255,0.08)',
               color: '#e2e8f0', display: 'flex', flexDirection: 'column'
             }}
           >

@@ -17,7 +17,7 @@ const WhatsAppWidget = () => {
             className="whatsapp-card"
             style={{
               position: 'absolute', bottom: '80px', right: 0,
-              width: '320px', background: '#fff', borderRadius: '20px',
+              width: 'calc(100vw - 40px)', maxWidth: '320px', background: '#fff', borderRadius: '20px',
               boxShadow: '0 20px 50px rgba(0,0,0,0.3)', overflow: 'hidden',
               color: '#333'
             }}
